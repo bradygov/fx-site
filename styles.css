@@ -1,0 +1,269 @@
+:root {
+    --dark-bg: #121212;
+    --dark-surface: #1e1e1e;
+    --primary: #00c853;
+    --accent: #2196f3;
+    --text: #ffffff;
+    --text-secondary: #b0b0b0;
+}
+
+body.dark-theme {
+    background-color: var(--dark-bg);
+    color: var(--text);
+}
+
+.navbar {
+    background-color: var(--dark-surface);
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary) !important;
+}
+
+.hero {
+    padding: 6rem 0;
+    background: linear-gradient(to bottom, var(--dark-bg), var(--dark-surface));
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+}
+
+.hero .lead {
+    color: var(--text-secondary);
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    padding: 0.8rem 2rem;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #00b34a;
+    border-color: #00b34a;
+}
+
+.chart-container {
+    background-color: var(--dark-surface);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.markets-section, .performance-section, .join-section {
+    padding: 5rem 0;
+    background-color: var(--dark-bg);
+}
+
+.stat-card {
+    background-color: var(--dark-surface);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.stat-card h3 {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.stat-card .stat {
+    color: var(--primary);
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.market-card {
+    background-color: var(--dark-surface);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.market-card .price {
+    font-size: 1.5rem;
+    color: var(--accent);
+}
+
+.market-card .change-up {
+    color: var(--primary);
+}
+
+.market-card .change-down {
+    color: #ff5252;
+}
+
+.signup-form {
+    background-color: var(--dark-surface);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.form-control {
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: var(--text);
+    padding: 0.8rem;
+}
+
+.form-control:focus {
+    background-color: rgba(255,255,255,0.15);
+    border-color: var(--primary);
+    color: var(--text);
+    box-shadow: none;
+}
+
+.form-control::placeholder {
+    color: var(--text-secondary);
+}
+
+.form-control option {
+    background-color: var(--dark-surface);
+    color: var(--text);
+}
+
+select.form-control {
+    background-color: var(--dark-surface);
+    color: var(--text);
+    border: 1px solid rgba(255,255,255,0.1);
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23ffffff' d='M6 8.825L1.175 4 2.238 2.938 6 6.7l3.763-3.763L10.825 4z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.8rem center;
+    padding-right: 2.5rem;
+}
+
+select.form-control option {
+    background-color: var(--dark-surface);
+    color: var(--text);
+    padding: 0.8rem;
+}
+
+select.form-control:focus {
+    background-color: var(--dark-surface);
+    border-color: var(--primary);
+    color: var(--text);
+    box-shadow: none;
+}
+
+.footer {
+    background-color: var(--dark-surface);
+    padding: 2rem 0;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero .lead {
+        font-size: 1.1rem;
+    }
+    
+    .stat-card .stat {
+        font-size: 2rem;
+    }
+}
+.pricing-box {
+    background-color: var(--dark-surface);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.price-amount {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+.price-period {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+
+.pricing-features {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+    color: var(--text);
+}
+
+.pricing-features li {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero .lead {
+        font-size: 1.1rem;
+    }
+    
+    .stat-card .stat {
+        font-size: 2rem;
+    }
+}
+.contact-section {
+    background-color: var(--dark-surface);
+    padding: 3rem 2rem;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.contact-section .lead {
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-button {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.social-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+}
+
+.social-button.whatsapp {
+    background: linear-gradient(145deg, #25D366, #128C7E);
+}
